@@ -4,21 +4,21 @@ import "../assets/app.css";
 ---
 
 <Layout>
-  <div class="h-screen flex flex-col items-center justify-center md:mt-[-100px]">
+  <div class="h-screen flex flex-col items-center justify-center mt-24 md:mt-[-100px]">
     <h1 class="text-3xl font-bold mb-4">Vota 6</h1>
     <h2 class="text-3xl font-bold mb-4">Vota Capy</h2>
     <div class="flex flex-col gap-4 md:flex-row">
       <div class="rounded-4xl overflow-hidden">
         <img src="/logo.png" class="w-full max-h-96 object-contain" />
       </div>
-      <div class="flex flex-col bg-gray-700 rounded-4xl p-4">
-        <h3 class="text-lg text-center font-bold mb-4 text-orange-400">Tracks de Capy</h3>
-        <h4 class="my-4 mb-0 pl-1 opacity-75">Capy el rey del estadio</h4>
-        <audio controls autoplay class="w-96">
+      <div class="flex flex-col bg-gray-700 rounded-4xl p-4 w-full md:w-96">
+        <h3 class="text-xl text-center font-bold mb-4">Tracks de Capy</h3>
+        <h4 class="my-4 mb-2 pl-1 opacity-75">Capy el rey del estadio:</h4>
+        <audio controls autoplay class="w-full">
           <source src="/Capy-El-Rey-Del-Estadio.mp3" type="audio/mp3" />
         </audio>
-        <h4 class="my-4 mb-0 pl-1 opacity-75">Vamos con Capy Bara</h4>
-        <audio controls class="w-96">
+        <h4 class="my-4 mb-2 pl-1 opacity-75">Vamos con Capy Bara:</h4>
+        <audio controls class="w-full">
           <source src="/Vamos-con-Capy-Bara.mp3" type="audio/mp3" />
         </audio>
       </div>
@@ -33,6 +33,7 @@ import "../assets/app.css";
     font-style: normal;
     font-size: 56px;
     margin-bottom: 0px;
+    text-align: center;
   }
 
   h2 {
@@ -40,6 +41,7 @@ import "../assets/app.css";
     font-weight: 800;
     font-size: 48px;
     font-style: normal;
+    text-align: center;
   }
 
   p {
@@ -57,8 +59,16 @@ import "../assets/app.css";
       opacity: 1;
     }
   }
-
   p {
     animation: pulse 1s infinite;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 36px;
+    }
   }
 </style>
