@@ -10,14 +10,14 @@ import "../assets/app.css";
       <p class="text-lg mt-2">El capitán que nos une</p>
     </header>
 
-    <main class="max-w-5xl p-6 space-y-10">
+    <main class="max-w-6xl p-6 space-y-10">
       <img
         src="/capy-une.png"
         alt="Capy"
-        class="mx-auto mb-4 ml-4 h-[600px] float-right object-contain hidden md:block"
+        class="mx-auto mb-4 ml-4 h-[600px] float-right object-contain hidden md:block rounded border-orange-300 border-2"
       />
 
-      <section class="space-y-4 p-2">
+      <section class="space-y-4 p-2 bg-[rgba(255,255,255,0.1)] rounded">
         <h2 class="text-2xl font-bold text-orange-300 mb-4">
           ⚽ Ministerio del Potrero y el Golazo
         </h2>
@@ -28,7 +28,7 @@ import "../assets/app.css";
         </ul>
       </section>
 
-      <section>
+      <section class="space-y-4 p-2 bg-[rgba(255,255,255,0.1)] rounded">
         <h2 class="text-2xl font-bold text-orange-300 mb-4">
           🎙️ Secretaría de Hinchadas Felices
         </h2>
@@ -39,7 +39,7 @@ import "../assets/app.css";
         </ul>
       </section>
 
-      <section>
+      <section class="space-y-4 p-2 bg-[rgba(255,255,255,0.1)] rounded">
         <h2 class="text-2xl font-bold text-orange-300 mb-4">
           🧃 Ministerio del Mate y el Vestuario
         </h2>
@@ -50,7 +50,7 @@ import "../assets/app.css";
         </ul>
       </section>
 
-      <section>
+      <section class="space-y-4 p-2 bg-[rgba(255,255,255,0.1)] rounded">
         <h2 class="text-2xl font-bold text-orange-300 mb-4">
           🧠 Plan Nacional “Fútbol para la Cabeza”
         </h2>
@@ -60,7 +60,7 @@ import "../assets/app.css";
         </ul>
       </section>
 
-      <section>
+      <section class="space-y-4 p-2 bg-[rgba(255,255,255,0.1)] rounded">
         <h2 class="text-2xl font-bold text-orange-300 mb-4">
           📱 CapyDigital: Conectando con Pasión
         </h2>
@@ -70,7 +70,7 @@ import "../assets/app.css";
         </ul>
       </section>
 
-      <section>
+      <section class="space-y-4 p-2 bg-[rgba(255,255,255,0.1)] rounded">
         <h2 class="text-2xl font-bold text-orange-300 mb-4">
           🧢 Decreto de Identidad Deportiva
         </h2>
@@ -80,7 +80,7 @@ import "../assets/app.css";
         </ul>
       </section>
 
-      <section>
+      <section class="space-y-4 p-2 bg-[rgba(255,255,255,0.1)] rounded">
         <h2 class="text-2xl font-bold text-orange-300 mb-4">
           📦 CapyPlan Emergencia Fútbol-Free
         </h2>
@@ -104,5 +104,13 @@ import "../assets/app.css";
   article {
     font-family: "Lato", sans-serif;
     font-style: normal;
+  }
+
+  li {
+    margin-left: 1rem;
+  }
+
+  li::marker {
+    color: orange;
   }
 </style>
